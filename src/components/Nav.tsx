@@ -1,21 +1,30 @@
-import {navLinks} from '../constants'
 import Logo from '@/assets/icons/logo';
+import {Link  } from 'react-router-dom'
+
 
 const Nav = () => {
     return (
         <header className='padding-x py-8 absolute z-10 w-full'>
             <nav className='flex justify-between items-center max-container mb-4'>
-                <a href="">
+                <Link to="/">
                     <Logo/>
-                </a>
+                </Link>
                 <ul className='flex-1 flex justify-center items-center gap-12 font-medium max-lg:hidden'>
-                    {navLinks.map((item) => (
-                        <li key={item.label}>
-                            <a href={item.href}
-                                className="font-montserrat leading-normal text-xl"
-                            >{item.label}</a>
-                        </li>
-                    ))}
+                    <li>
+                        <Link to="/about" className="font-montserrat leading-normal text-xl">About us</Link>
+                    </li>
+                    <li>
+                        <Link  to='/blog' className="font-montserrat leading-normal text-xl">Blog</Link>
+                    </li>
+                    <li>
+                        <Link  to='/pricing' className="font-montserrat leading-normal text-xl">Pricing</Link>
+                    </li>
+                    <li>
+                        <Link  to='/careers' className="font-montserrat leading-normal text-xl">Careers</Link>
+                    </li>
+                    <li>
+                        <Link to='/contact'  className="font-montserrat leading-normal text-xl">Contact us</Link>
+                    </li>
                 </ul>
                 <div className='flex gap-4'>
                 <button className='flex justify-center items-center px-7 py-4 border text-xl leading-none border-4 border-black rounded-lg text-black' >
