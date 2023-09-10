@@ -1,37 +1,37 @@
 import Logo from '@/assets/icons/logo';
 import {Link  } from 'react-router-dom'
 
+import {links} from '../constants'
+
 
 const Nav = () => {
     return (
-        <header className='padding-x py-8 absolute z-10 w-full'>
-            <nav className='flex justify-between items-center max-container mb-4'>
+        <header className='py-8 absolute left-0 top-0 z-50 w-full'>
+            <div className='flex align-center min-h-100 max-container'>
                 <Link to="/">
-                    <Logo/>
-                </Link>
+                        <Logo/>
+                    </Link>
+            <nav className='flex justify-between items-center max-container mb-4'>
                 <ul className='flex-1 flex justify-center items-center gap-12 font-medium max-lg:hidden'>
-                    <li>
-                        <Link to="/about" className="font-montserrat leading-normal text-xl">About us</Link>
+                {links.map((link) => (
+                    <li key={link.to}>
+                    <Link to={link.to} className="leading-normal text-xl">
+                        {link.text}
+                    </Link>
                     </li>
-                    <li>
-                        <Link  to='/pricing' className="font-montserrat leading-normal text-xl">Pricing</Link>
-                    </li>
-                    <li>
-                        <Link  to='/careers' className="font-montserrat leading-normal text-xl">Careers</Link>
-                    </li>
-                    <li>
-                        <Link to='/contact'  className="font-montserrat leading-normal text-xl">Contact us</Link>
-                    </li>
+                ))}
                 </ul>
-                <div className='flex gap-4'>
-                <button className='flex justify-center items-center px-7 py-4 border text-xl leading-none border-4 border-black rounded-lg text-black' >
+                </nav>
+                <div className='flex gap-4 items-center mb-4'>
+                <button className='flex justify-center items-center px-7 py-4 border text-xl leading-none border-2 border-slate-500 rounded-2xl text-slate-500 ' >
                         Login
                 </button>
-                <button className='flex justify-center items-center px-7 py-4 border text-xl leading-none text-white rounded-lg bg-sky-500/100 '>
+                <button className='flex justify-center items-center px-7 py-4 border text-xl leading-none text-white rounded-2xl bg-sky-500/100 '>
                         Book a demo
                 </button>
                 </div>
-            </nav>
+             
+            </div>
            <hr/>
         </header>
          

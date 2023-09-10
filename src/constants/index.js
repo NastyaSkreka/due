@@ -6,6 +6,14 @@ export const navLinks = [
     { href: "#contact-us", label: "Contact us" },
 ];
 
+export const links = [
+    { to: "/about", text: "About us" },
+    { to: "/pricing", text: "Pricing" },
+    { to: "/careers", text: "Careers" },
+    { to: "/contact", text: "Contact us" },
+  ];
+  
+
 export const footerLinks = [
     {
         links: [

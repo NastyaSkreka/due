@@ -7,12 +7,15 @@ import  Footer  from './pages/home/sections/Footer';
 import Pricing from './pages/pricing/Pricing';
 import About from './pages/about/About';
 
+import './index.css'
+
 
 const App = () => {
     return (
+        <div className='wrapper'>
         <Router>
         <Nav />
-        <div className='container'>
+        <div className='flex-1'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/pricing" element={<Pricing />} />
@@ -24,6 +27,7 @@ const App = () => {
         <Footer /> 
         </div>
     </Router>
+    </div>
     )
 }
 
