@@ -3,7 +3,7 @@ import { Hero, Review, Share, Upload } from './sections'
 const Home = () => {
     return(   
         <>         
-    <section className='xl:padding-l wide:padding-r padding-b'>
+    <section id="home" className="w-full flex xl:flex-row flex-col justify-center min-h-screen max-container">
         <Hero/>
     </section>
     <section className='padding'>

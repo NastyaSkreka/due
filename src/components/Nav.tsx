@@ -30,7 +30,6 @@ const Nav = () => {
                         Book a demo
                 </button>
                 </div>
-             
             </div>
            <hr/>
         </header>

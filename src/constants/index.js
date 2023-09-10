@@ -1,11 +1,3 @@
-export const navLinks = [
-    { href: "#about-us", label: "About Us" },
-    { href: "#blog", label: "Blog" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#careers", label: "Careers" },
-    { href: "#contact-us", label: "Contact us" },
-];
-
 export const links = [
     { to: "/about", text: "About us" },
     { to: "/pricing", text: "Pricing" },
