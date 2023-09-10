@@ -1,4 +1,4 @@
-import { Hero, Review, Share, Upload, Footer } from './sections/index'
+import { Hero, Review, Share, Upload } from './sections'
 
 const Home = () => {
     return(   
@@ -14,9 +14,6 @@ const Home = () => {
     </section>
     <section className='padding'>
         <Share/>
-    </section>
-    <section className='padding-x padding-t pb-8 bg-slate-50'>
-        <Footer/>
     </section>
     </> 
     )

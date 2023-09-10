@@ -14,9 +14,6 @@ const Nav = () => {
                         <Link to="/about" className="font-montserrat leading-normal text-xl">About us</Link>
                     </li>
                     <li>
-                        <Link  to='/blog' className="font-montserrat leading-normal text-xl">Blog</Link>
-                    </li>
-                    <li>
                         <Link  to='/pricing' className="font-montserrat leading-normal text-xl">Pricing</Link>
                     </li>
                     <li>

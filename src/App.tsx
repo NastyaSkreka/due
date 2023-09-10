@@ -5,6 +5,7 @@ import Join from './pages/Careers/Careers';
 import Home from './pages/home/Home';
 import  Footer  from './pages/home/sections/Footer';
 import Pricing from './pages/pricing/Pricing';
+import About from './pages/about/About';
 
 
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/pricing" element={<Pricing />} />
-            <Route path="/careers" element={<Join/>} />         
+            <Route path="/careers" element={<Join/>} /> 
+            <Route path="/about" element={<About/>} />      
           </Routes>
         </div>
         <div className='bg-slate-100 py-20'>
