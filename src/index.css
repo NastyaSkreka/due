@@ -10,7 +10,6 @@
 
 }
 
-
 html,body{
     height:100%;
     width:100%;
@@ -20,9 +19,7 @@ html,body{
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
 }
-
 
 body{
     display: flex;
@@ -77,6 +74,10 @@ body{
 
   .padding-b {
     @apply sm:pb-24 pb-12;
+  }
+
+  .text-d{
+    @apply text-lg text-slate-600 leading-normal;
   }
 
   
