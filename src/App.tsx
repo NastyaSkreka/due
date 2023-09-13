@@ -15,7 +15,7 @@ const App = () => {
         <div className='wrapper'>
         <Router>
         <Nav />
-        <div className='flex-1'>
+        <div className='w-full h-full'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/pricing" element={<Pricing />} />

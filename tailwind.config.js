@@ -23,6 +23,8 @@ export default {
         },
         colors: {
           'primary': "#0000FF",
+          'primary-color': 'pink',
+          'secondary-color': 'blue',
 
         },
         boxShadow: {
