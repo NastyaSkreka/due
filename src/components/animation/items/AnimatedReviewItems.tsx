@@ -1,30 +1,31 @@
 import { useEffect } from "react";
 import { Element } from "react-scroll";
 import { motion} from "framer-motion";
-import { DocumentIcon, IconLock, ProgressIcon,  } from "@/assets/icons";
+import { AiIcon,  CustomReportIcon, ReportIcon } from "@/assets/icons";
 
 
 const items = [
   {
-    icon: IconLock,
-    title: "Securely store and share documents",
-    description: "Upload and securely store the documents for review in the data room. Alternatively, if your client needs their own data room, you can allow them to securely share documents through Due.",
+    icon: ReportIcon,
+    title: "Consistent reporting",
+    description:
+      "All your document reviewers can consistently report their findings as they can select from pre-written answers. The system will also suggest pre-written ‘red flags’ based on their responses to questions. As red flags are able to be written consistently, your client can easily search for them and act on your recommendations based on the severity of the issue identified.",
   },
   {
-    icon: DocumentIcon,
-    title: "Add your team and assign documents to specialists",
+    icon: CustomReportIcon,
+    title: "Customise your templates",
     description:
-      "Add your team and outside advisors to the project, and assign documents to the specialist for review. Documents assigned to a reviewer will be added to their to-do list.",
+      "You can customise our standard templates using our no-code tools so you can tailor your review based on the scope of work agreed with your client such as exceptions only reporting or a full detailed report.",
   },
   {
-    icon: ProgressIcon,
-    title: "Track progress and adjust scope to deliver on time",
+    icon: AiIcon,
+    title: "AI augmented document review",
     description:
-      "Track the progress of the document review and communicate this to the client in real-time. Know ahead of time if the document review is going to be completed on time based on the current progress and if not, adjust the scope of review to speed up the review.",
+      "Eliminate the monotonous parts of document review that consumes expensive chargeable hours (and not recoverable from clients) using our AI augmented review such as entity extraction.",
   },
 ];
 
-const AnimatedUploadItems = () => {
+const AnimatedReviewItems = () => {
     useEffect(() => {
       window.addEventListener("scroll", handleScroll);
       return () => {
@@ -65,4 +66,4 @@ const AnimatedUploadItems = () => {
       </div>
     );
             }
-export default AnimatedUploadItems;
+export default AnimatedReviewItems;

@@ -4,7 +4,7 @@ import { motion} from "framer-motion";
 const AnimatedGradientText = () => {
     return (
       <motion.div
-        className="text-8xl mb-5 font-bold"
+        className="max-sm:text-3xl max-lg:text-4xl text-8xl mb-5 font-bold"
         style={{
           backgroundImage:
             "linear-gradient(90deg,#6989f5,#f5ae53,#ec658e,#6989f5)",

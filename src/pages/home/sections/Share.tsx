@@ -2,8 +2,6 @@ import { ReportsSnippet } from '@/assets/snippets';
 
 import AnimatedShareItems from '@/components/animation/items/AnimatedShareItems';
 
-
-
 const Share = () => {
     return (
         <>

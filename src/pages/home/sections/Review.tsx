@@ -1,7 +1,5 @@
 import { DocumentReviewSnippet } from "@/assets/snippets";
-import  ReportIcon  from "@/assets/icons/report-icon";
-import CustomReportIcon from "@/assets/icons/custom-report-icon";
-import AiIcon from "@/assets/icons/ai-icon";
+import AnimatedReviewItems from "@/components/animation/items/AnimatedReviewItems";
 
 const Review = () => {
     return (
@@ -36,42 +34,7 @@ const Review = () => {
                 </div>
             </div>
                 <div className="flex flex-1 flex-col">
-              <div className=' py-8 space-y-14 with-full'>
-                <div className='flex  flex-col lg:max-w-xl'>  
-                    <div>
-                      <ReportIcon/>
-                    </div>
-                    <p className='mt-4  text-xl font-semibold'>
-                    Consistent reporting
-                    </p>
-                    <p className='mt-6 text-d '>
-                    All your document reviewers can consistently report their findings as they can select from pre-written answers. The system will also suggest pre-written ‘red flags’ based on their responses to questions. As red flags are able to be written consistently, your client can easily search for them and act on your recommendations based on the severity of the issue identified.
-                    </p>   
-                </div> 
-                <div className='flex  flex-col lg:max-w-xl'>  
-                    <div>
-                      <CustomReportIcon/>
-                    </div>
-                    <p className='mt-4  text-xl font-semibold'>
-                        Customise your templates
-                    </p>
-                    <p className='mt-6 text-d'>
-                    You can customise our standard templates using our no-code tools so you can tailor your review based on the scope of work agreed with your client such as exceptions only reporting or a full detailed report.
-                    </p>   
-                </div> 
-                <div className='flex  flex-col lg:max-w-xl'>  
-                    <div>
-                      <AiIcon/>
-                    </div>
-                    <p className='mt-4  text-xl font-semibold'>
-                        AI augmented document review
-                    </p>
-                    <p className='mt-6  text-d'>
-                    Eliminate the monotonous parts of document review that consumes expensive chargeable hours (and not recoverable from clients) using our AI augmented review such as entity extraction.
-                    </p>   
-                </div> 
-                
-                </div>               
+                <AnimatedReviewItems/>             
             </div>
             </div>  
         </>
