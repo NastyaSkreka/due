@@ -16,7 +16,7 @@ const Upload = () => {
             <p className='max-md:text-xl max-lg:text-2xl text-center text-3xl font-semibold mb-2'>Store and manage documents in a secure data room.</p>
             <p className='max-md:text-sm max-md:max-w-2xl max-lg:max-w-3xl  m-auto  text-center max-w-4xl max-sm:mb-2 mb-12 text-d'>Use our data room to project manage your due diligence. Upload the documents from the seller’s Virtual Data Room (VDR), securely store them, classify and assign them to the relevant specialists for review.</p>
       
-            <div className=" flex justify-between max-lg:items-center items-start max-lg:flex-col max-sm:gap-5 gap-20 w-full max-container">
+            <div className="flex justify-between max-lg:items-center items-start max-lg:flex-col max-sm:gap-5 gap-20 w-full max-container">
                 <div className=' flex-1 flex justify-center'>
                     <DataRoomSnippet/>
                 </div>

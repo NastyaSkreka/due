@@ -49,7 +49,7 @@ const AnimatedReviewItems = () => {
             {items.map((item, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col lg:max-w-xl"
+                className="max-sm:text-center max-lg:p-5 max-lg:border-2 max-lg:border-md max-lg:rounded-lg  max-lg:border-indigo-500  max-lg:items-center flex flex-col lg:max-w-xl"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.5 }}
@@ -58,7 +58,7 @@ const AnimatedReviewItems = () => {
                   <item.icon/>
                 </div>
                 <p className="mt-4 text-xl font-semibold">{item.title}</p>
-                <p className="mt-6 text-d">{item.description}</p>
+                <p className="max-md:max-w-2xl  max-lg:text-sm  max-lg:max-w-3xl  mt-6 text-d">{item.description}</p>
               </motion.div>
             ))}
           </div>

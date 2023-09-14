@@ -9,10 +9,10 @@ const Home = () => {
     <section className="max-container pb-20 max-sm:pb-4">
         <Upload/>
     </section>
-    <section className='max-container py-20'>
+    <section className='max-container max-lg:py-10 max-sm:py-5 py-20'>
         <Review/>
     </section>
-    <section className='max-container py-20'>
+    <section className='max-container max-lg:py-10 max-sm:py-5 py-20'>
         <Share/>
     </section>
     </> 
