@@ -46,7 +46,7 @@ const Footer = () => {
               <div>             
                 <ul>
                   {section.links.map((link) => (
-                    <li className='mt-3 text-xl leading-normal' key={link.name}>
+                    <li className='max-sm:text-sm mt-3 text-lg leading-normal' key={link.name}>
                       <a href={link.link}>{link.name}</a>
                     </li>
                   ))}

@@ -36,7 +36,7 @@ const Share = () => {
             </div>
         </div>
             <div className="flex flex-1 flex-col">
-           <AnimatedShareItems/>
+                <AnimatedShareItems/>
            </div>
         </div>  
         </>

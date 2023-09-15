@@ -41,6 +41,14 @@ body{
     flex-direction: column; 
 }
 
+.card{
+    width: fit-content;
+    border-radius: 0.75rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    padding: 0.5rem;
+}
+
 .journey-card_secondary01 {
     --tw-bg-opacity: 1;
     background-color: rgb(255 238 217/var(--tw-bg-opacity)); 
@@ -81,6 +89,41 @@ body{
 .journey-card_main05 {
     --tw-bg-opacity: 1;
     background-color: rgb(156 163 175/var(--tw-bg-opacity));
+}
+.bg-warn-1 {
+    --tw-bg-opacity: 1!important;
+    background-color: rgb(255 238 217/var(--tw-bg-opacity))!important;
+}
+.bg-warn-3 {
+    --tw-bg-opacity: 1!important;
+    background-color: rgb(245 174 83/var(--tw-bg-opacity))!important;
+}
+
+.bg-error-1 {
+    --tw-bg-opacity: 1!important;
+    background-color: rgb(255 231 238/var(--tw-bg-opacity))!important;
+}
+.bg-error-2 {
+    --tw-bg-opacity: 1!important;
+    background-color: rgb(236 101 142/var(--tw-bg-opacity))!important;
+}
+
+.bg-success-1 {
+    --tw-bg-opacity: 1!important;
+    background-color: rgb(232 247 241/var(--tw-bg-opacity))!important;
+}
+.bg-success-2 {
+    --tw-bg-opacity: 1!important;
+    background-color: rgb(13 173 103/var(--tw-bg-opacity))!important;
+}
+
+.bg-primary-2 {
+    --tw-bg-opacity: 1!important;
+    background-color: rgb(83 120 244/var(--tw-bg-opacity))!important
+}
+.bg-secondary-2 {
+    --tw-bg-opacity: 1!important;
+    background-color: rgb(234 238 254/var(--tw-bg-opacity))!important;
 }
 }
 @layer utilities {

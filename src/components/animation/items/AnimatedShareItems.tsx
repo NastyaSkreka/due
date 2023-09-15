@@ -9,7 +9,7 @@ const items = [
     icon: CheckIcon,
     title: "Consistent reporting",
     description:
-      "All your document reviewers can consistently report their findings as they can select from pre-written answers. The system will also suggest pre-written ‘red flags’ based on their responses to questions. As red flags are able to be written consistently, your client can easily search for them and act on your recommendations based on the severity of the issue identified.",
+      "All your document reviewers can consistently report their findings as they can select from pre-written answers.",
   },
   {
     icon: DocumentIcon,
@@ -21,7 +21,7 @@ const items = [
     icon: CustomReportIcon,
     title: "Customise your reports",
     description:
-      "All report templates are fully customisable using our proprietary no-code tools. You can customise them based on your firm’s branding or style guide, drafting preferences, and client requirements.",
+      "All report templates are fully customisable using our proprietary no code-tools. You can customise them based on your firm’s branding or style guide, drafting preferences and client requirements.",
   },
 ];
 
