@@ -1,5 +1,4 @@
 import CardItem from "@/components/about/card-item";
-import { useState } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import CardSlider from "@/components/about/card-slider";
 

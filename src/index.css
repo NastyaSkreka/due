@@ -29,31 +29,16 @@ body{
 
 @layer components {
   .max-container {
-    max-width: 1024px;
+    max-width: 1440px;
     padding:0px 15px ;
     margin: 0 auto;
     box-sizing: border-box;
   }
- 
-  @media (max-width: 768px){
-    .max-container {
-      max-width: 768px;
-      }
-    }
-    @media (max-width: 640px){
-        .max-container {
-            max-width: 640px;
-            }
-    }
-    
-
-
 
   .wrapper{
     min-height: 100%;
     display: flex;
     flex-direction: column; 
-    flex: 1 1 0%;
 }
 
 .card{
@@ -110,7 +95,7 @@ body{
     background-color: rgb(255 238 217/var(--tw-bg-opacity))!important;
 }
 .bg-warn-3 {
-    --tw-bg-opacity: 1!important;
+        --tw-bg-opacity: 1!important;
     background-color: rgb(245 174 83/var(--tw-bg-opacity))!important;
 }
 
@@ -139,6 +124,22 @@ body{
 .bg-secondary-2 {
     --tw-bg-opacity: 1!important;
     background-color: rgb(234 238 254/var(--tw-bg-opacity))!important;
+}
+.bg-primary-3 {
+    --tw-bg-opacity: 1!important;
+    background-color: rgb(59 102 242/var(--tw-bg-opacity))!important;
+}
+.border-primary-3 {
+    --tw-border-opacity: 1!important;
+    border-color: rgb(59 102 242/var(--tw-border-opacity))!important;
+}
+.bg-gradient-to-tr {
+    background-image: linear-gradient(to top right,var(--tw-gradient-stops))!important;
+}
+.from-primary-3 {
+    --tw-gradient-from: #3b66f2 var(--tw-gradient-from-position)!important;
+    --tw-gradient-to: rgba(59,102,242,0) var(--tw-gradient-to-position)!important;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to)!important;
 }
 }
 @layer utilities {
