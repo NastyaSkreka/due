@@ -8,6 +8,7 @@ import Pricing from './pages/pricing/Pricing';
 import About from './pages/about/About';
 
 import './index.css'
+import Connect from './pages/connect/Connect';
 
 
 const App = () => {
@@ -20,7 +21,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/careers" element={<Join/>} /> 
-            <Route path="/about" element={<About/>} />      
+            <Route path="/about" element={<About/>} />   
+            <Route path="/contact" element={<Connect/>} />      
           </Routes>
         </div>
         <div className='bg-slate-100 py-20'>
