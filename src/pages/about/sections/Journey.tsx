@@ -99,7 +99,9 @@ const Journey = () => {
     return (
         <div className="wrapper">
         <div className="w-full">
-            <h1 className="w-full text-center text-4xl font-semibold">User Journey</h1>
+        <div className=" flex items-center flex-col justify-center gap-4 w-full max-xl:padding-x ">
+                <div className=" max-md:text-center max-md:leading-normal max-xl:text-4xl text-8xl mb-5 font-semibold">User <span className="text-blue-600">Journey</span></div>
+        </div> 
             <div className="w-full my-10 space-y-4">
              
             <AnimatePresence initial={false}>

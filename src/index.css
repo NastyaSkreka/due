@@ -29,16 +29,31 @@ body{
 
 @layer components {
   .max-container {
-    max-width: 1440px;
+    max-width: 1024px;
     padding:0px 15px ;
     margin: 0 auto;
     box-sizing: border-box;
   }
+ 
+  @media (max-width: 768px){
+    .max-container {
+      max-width: 768px;
+      }
+    }
+    @media (max-width: 640px){
+        .max-container {
+            max-width: 640px;
+            }
+    }
+    
+
+
 
   .wrapper{
     min-height: 100%;
     display: flex;
     flex-direction: column; 
+    flex: 1 1 0%;
 }
 
 .card{
