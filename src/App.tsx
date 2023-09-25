@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
 import Nav from './components/Nav'
-import Join from './pages/Careers/Careers'
+import Join from './pages/careers/Careers'
 import Home from './pages/home/Home'
-import Footer from './pages/home/sections/Footer'
+import Footer from './components/Footer'
 import Pricing from './pages/pricing/Pricing'
 import About from './pages/about/About'
 
@@ -15,7 +14,7 @@ const App = () => {
     <div className="wrapper">
       <Router>
         <Nav />
-        <div className="w-full h-full">
+        <div className='w-full h-full'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/pricing" element={<Pricing />} />

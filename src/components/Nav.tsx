@@ -1,10 +1,7 @@
-import { useState } from 'react'
 import Logo from '@/assets/icons/logo'
 import { Link } from 'react-router-dom'
-
-import { links } from '../constants'
-import LargeScreenNav from './Nav/LargeScreenNav'
-import BurgerMenu from './Nav/BurgerMenu'
+import LargeScreenNav from './nav/LargeScreenNav'
+import BurgerMenu from './nav/BurgerMenu'
 
 const Nav = () => {
   return (

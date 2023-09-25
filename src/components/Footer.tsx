@@ -5,7 +5,6 @@ import InstagramIcon from '@/assets/icons/instagram-icon'
 import TwitterIcon from '@/assets/icons/twitter-icon'
 import YoutubeIcon from '@/assets/icons/youtube-icon'
 import { footerLinks } from '@/constants'
-/*flex flex-col items-start*/
 
 const Footer = () => {
   return (
