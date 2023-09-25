@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react'
 import { Burgerlinks } from '@/constants'
 import Logo from '@/assets/icons/logo'
 import { motion } from 'framer-motion'
+import { useLocation } from 'react-router-dom'
 
 const BurgerMenu = () => {
+  const location = useLocation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -35,6 +37,7 @@ const BurgerMenu = () => {
     setIsMenuOpen(false)
   }
 
+  
   return (
     <div className="relative">
       <div
@@ -46,13 +49,13 @@ const BurgerMenu = () => {
         <div className="w-5 h-1 bg-sky-500"></div>
       </div>
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-gray-600 opacity-80 z-50 flex justify-center items-center">
-          <motion.div
-            initial="hidden"
-            animate={isMenuOpen ? 'visible' : 'hidden'}
-            variants={menuVariants}
-            className="flex flex-col menu-body"
-          >
+        <div className="menu-overlay visible">
+        <motion.div
+          initial="hidden"
+          animate={isMenuOpen ? 'visible' : 'hidden'}
+          variants={menuVariants}
+          className="flex flex-col menu-body"
+        >
             <div className="flex flex-col">
               <div className="flex flex-row justify-between items-center my-3">
                 <Logo />
@@ -86,7 +89,11 @@ const BurgerMenu = () => {
                 {Burgerlinks.map((link) => (
                   <div
                     key={link.to}
-                    className="flex flex-row justify-start items-center w-full rounded-lg lg:w-fit p-3 gap-5"
+                    className={`flex flex-row justify-start items-center w-full rounded-lg lg:w-fit p-3 gap-5 ${
+                      link.to === location.pathname
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-200 text-black'
+                    }`}
                   >
                     {link.icon}
                     <a className="text-lg" href={link.to}>

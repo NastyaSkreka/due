@@ -1,8 +1,9 @@
 import { links } from '@/constants'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const LargeScreenNav = () => {
+  const location = useLocation()
   const [isActive, setIsActive] = useState<number | null>(null)
 
   const handleItemClick = (index: number) => {
@@ -17,7 +18,9 @@ const LargeScreenNav = () => {
             <Link
               to={link.to}
               onClick={() => handleItemClick(index)}
-              className={index === isActive ? 'activeLink' : 'link'}
+              className={`${
+                link.to === location.pathname ? 'activeLink' : 'link'
+              } hover:text-blue-600 transition-colors duration-300 ease-in-out`}
             >
               {link.text}
             </Link>
