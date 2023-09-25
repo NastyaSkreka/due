@@ -60,5 +60,5 @@ export default function IconLock() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

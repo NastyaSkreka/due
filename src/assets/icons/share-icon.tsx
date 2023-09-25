@@ -57,5 +57,5 @@ export default function ShareIcon() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }

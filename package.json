@@ -32,7 +32,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject", 
+    "format": "prettier -w -l ./src/**/*.{js,jsx,tsx}"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +59,7 @@
     "@types/react-scroll": "^1.8.7",
     "@types/react-slick": "^0.23.10",
     "craco-alias": "^3.0.1",
+    "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3"
   }
 }

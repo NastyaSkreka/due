@@ -1,3 +1,3 @@
 export default function CirclesRadiant() {
-  return <span className={"circles"} />;
+  return <span className={'circles'} />
 }

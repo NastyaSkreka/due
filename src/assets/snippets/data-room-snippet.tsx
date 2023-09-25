@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { fadeInLeft } from "@/components/animation/animations";
+import { motion } from 'framer-motion'
+import { fadeInLeft } from '@/components/animation/animations'
 
 export default function DataRoomSnippet() {
   return (
@@ -7,7 +7,7 @@ export default function DataRoomSnippet() {
       {...fadeInLeft}
       width="684"
       height="382"
-      className={"max-w-full"}
+      className={'max-w-full'}
       viewBox="0 0 684 382"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -365,5 +365,5 @@ export default function DataRoomSnippet() {
         />
       </defs>
     </motion.svg>
-  );
+  )
 }

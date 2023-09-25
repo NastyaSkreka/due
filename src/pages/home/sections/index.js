@@ -4,10 +4,4 @@ import Review from './Review'
 import Share from './Share'
 import Footer from './Footer'
 
-export {
-    Hero, 
-    Upload, 
-    Review, 
-    Share, 
-    Footer
-}
+export { Hero, Upload, Review, Share, Footer }

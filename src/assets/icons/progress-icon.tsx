@@ -67,5 +67,5 @@ export default function ProgressIcon() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

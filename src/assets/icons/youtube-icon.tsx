@@ -12,5 +12,5 @@ export default function YoutubeIcon() {
         fill="#CDD0D4"
       />
     </svg>
-  );
+  )
 }

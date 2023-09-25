@@ -49,5 +49,5 @@ export default function ReviewIcon() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }

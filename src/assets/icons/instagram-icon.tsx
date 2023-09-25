@@ -20,5 +20,5 @@ export default function InstagramIcon() {
         fill="#CDD0D4"
       />
     </svg>
-  );
+  )
 }

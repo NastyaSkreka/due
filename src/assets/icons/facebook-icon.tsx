@@ -12,5 +12,5 @@ export default function FacebookIcon() {
         fill="#CDD0D4"
       />
     </svg>
-  );
+  )
 }

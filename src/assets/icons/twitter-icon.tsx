@@ -19,5 +19,5 @@ export default function TwitterIcon() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

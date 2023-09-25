@@ -10,5 +10,5 @@ export default function BulletIcon() {
       <circle cx="10.5" cy="11.1263" r="10.5" fill="#0DAD67" />
       <circle cx="10.5" cy="11.1263" r="6.5" fill="#E8F7F1" />
     </svg>
-  );
+  )
 }

@@ -1,7 +1,24 @@
 export default function UnlockTime() {
-    return (
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="32px" height="34px" viewBox="0 0 32 34" enable-background="new 0 0 32 34">  <image id="image0" width="32" height="34" x="0" y="0"
-    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA+stv/AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+  return (
+    <svg
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="32px"
+      height="34px"
+      viewBox="0 0 32 34"
+      enable-background="new 0 0 32 34"
+    >
+      {' '}
+      <image
+        id="image0"
+        width="32"
+        height="34"
+        x="0"
+        y="0"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAYAAAA+stv/AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAM
 nElEQVRYw0WWabDeZ1mHr2f5L+/+nv2ckvQkaZukoXtp2gKlVFqcWkUYrOxlEQSHGTvi2PGDguj4
 wYWMog5YYVgKTAepXbCDYEkFW7ogSUlDm6QkzXaynP282397nuf2Q0HvmXvm/n27P/yumUvtueeT
@@ -61,7 +78,8 @@ GjkP3fNp8hePm13tzb5WWJAITyCKFAUj0o5mua55aazO69//MbXxl1+Q5nIxFZL4gI3TWYUTRJSI
 EETQyhCCvGLxIXgr/JKQQMaAjMH/vdQGltSQCzZ1fac+qfuHzuha3NAiomy7RuFRZrJWrpSrYaXd
 5dvf+Ips7H1Mvfe1v7bk8upzVelujSwrQf4fw1/SqGFMYO//AlxAq9ACUDBbAAAAJXRFWHRkYXRl
 OmNyZWF0ZQAyMDIzLTA5LTE1VDA5OjQ3OjU5KzAwOjAwHrBpngAAACV0RVh0ZGF0ZTptb2RpZnkA
-MjAyMy0wOS0xNVQwOTo0Nzo1OSswMDowMG/t0SIAAAAASUVORK5CYII=" />
-</svg>
-    );
-  }
+MjAyMy0wOS0xNVQwOTo0Nzo1OSswMDowMG/t0SIAAAAASUVORK5CYII="
+      />
+    </svg>
+  )
+}

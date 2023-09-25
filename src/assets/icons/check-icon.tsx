@@ -14,5 +14,5 @@ export default function CheckIcon() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

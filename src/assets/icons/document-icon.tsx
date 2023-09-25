@@ -49,5 +49,5 @@ export default function DocumentIcon() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }

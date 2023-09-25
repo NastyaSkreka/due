@@ -1,6 +1,23 @@
 export default function SoftwareSolution() {
-    return (
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="32px" height="31px" viewBox="0 0 32 31" enable-background="new 0 0 32 31">  <image id="image0" width="32" height="31" x="0" y="0"
+  return (
+    <svg
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="32px"
+      height="31px"
+      viewBox="0 0 32 31"
+      enable-background="new 0 0 32 31"
+    >
+      {' '}
+      <image
+        id="image0"
+        width="32"
+        height="31"
+        x="0"
+        y="0"
         href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAQAAAAsXwcHAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
     AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN
     RQfnCQ8BKgISQTSOAAADnUlEQVQ4y32VXYhVVRTHf+fjjjoj8xURQ0ZWpA99aAYR1lP24EQ+WNib
@@ -21,8 +38,8 @@ export default function SoftwareSolution() {
     pKTmUc5yjgZ5QpbIAKtLejnNhe4dl/MPp1hH3b1COrdUwT3sZgUTXfHVDNODDedc5n3iq2rlTAt1
     ytvFeTPwjZJqxnlvArs4ytT0tXmZnQMmZ/4f/wUQT/PFWFEenQAAACV0RVh0ZGF0ZTpjcmVhdGUA
     MjAyMy0wOS0xNFQyMzo0MjowMiswMjowMG0uA9UAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDkt
-    MTRUMjM6NDI6MDIrMDI6MDAcc7tpAAAAAElFTkSuQmCC" />
+    MTRUMjM6NDI6MDIrMDI6MDAcc7tpAAAAAElFTkSuQmCC"
+      />
     </svg>
-    );
-  }
-  
+  )
+}

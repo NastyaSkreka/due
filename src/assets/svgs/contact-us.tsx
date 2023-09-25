@@ -5,7 +5,7 @@ export default function ContactUs() {
       width={630}
       height={315}
       fill="none"
-      className={"!hidden lg:!block max-w-full"}
+      className={'!hidden lg:!block max-w-full'}
     >
       <g clipPath="url(#a)">
         <path
@@ -115,5 +115,5 @@ export default function ContactUs() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

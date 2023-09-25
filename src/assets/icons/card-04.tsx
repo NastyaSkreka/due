@@ -1,6 +1,23 @@
 export default function RedFlags() {
-    return (
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="32px" height="33px" viewBox="0 0 32 33" enable-background="new 0 0 32 33">  <image id="image0" width="32" height="33" x="0" y="0"
+  return (
+    <svg
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="32px"
+      height="33px"
+      viewBox="0 0 32 33"
+      enable-background="new 0 0 32 33"
+    >
+      {' '}
+      <image
+        id="image0"
+        width="32"
+        height="33"
+        x="0"
+        y="0"
         href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAQAAAASL2HaAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
     AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN
     RQfnCQ4VMDNQIaKmAAACTUlEQVRIx8WVO2sVQRiGn5mdiEgQBC8gCBFMooVYijba+BNEsBOxsLAL
@@ -15,7 +32,8 @@ export default function RedFlags() {
     /MYZYBMDrKGfH7znLc95TYbW8zlKXWyCV7yad3gimZKOZOkWKLkur1IpAIHcyqd56n4O8l/+UG2t
     /aP+PyCRyRSL33Onl7F2vPhDjC+ig3Eyy3lKrvB/43Q+/wV2oo6xwOZjwQAAACV0RVh0ZGF0ZTpj
     cmVhdGUAMjAyMy0wOS0xNFQyMTo0ODo1MSswMDowMMlR+iUAAAAldEVYdGRhdGU6bW9kaWZ5ADIw
-    MjMtMDktMTRUMjE6NDg6NTErMDA6MDC4DEKZAAAAAElFTkSuQmCC" />
+    MjMtMDktMTRUMjE6NDg6NTErMDA6MDC4DEKZAAAAAElFTkSuQmCC"
+      />
     </svg>
-    );
-  }
+  )
+}

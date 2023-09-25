@@ -5,7 +5,7 @@ export default function PaymentCards() {
       width={202}
       height={29}
       fill="none"
-      className={"hidden md:block max-w-full"}
+      className={'hidden md:block max-w-full'}
     >
       <g clipPath="url(#a)">
         <path
@@ -115,5 +115,5 @@ export default function PaymentCards() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

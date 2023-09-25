@@ -1,14 +1,25 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { CardSlider } from "@/pages/about/sections/Solution";
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import Check from "@/assets/icons/check";
+import React from 'react'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import { CardSlider } from '@/pages/about/sections/Solution'
+import ArrowIcon from '@/assets/icons/arrow-list'
 
 interface SolutionSliderProps {
-  cards: CardSlider[];
+  cards: CardSlider[]
 }
+
+const PrevArrow: React.FC<{ onClick: () => void }> = ({ onClick }) => (
+  <div className="slick-arrow slick-prev" onClick={onClick}>
+    &lt; Previous
+  </div>
+)
+
+const NextArrow: React.FC<{ onClick: () => void }> = ({ onClick }) => (
+  <div className="slick-arrow slick-next" onClick={onClick}>
+    Next &gt;
+  </div>
+)
 
 const SolutionSlider: React.FC<SolutionSliderProps> = ({ cards }) => {
   const settings = {
@@ -17,8 +28,8 @@ const SolutionSlider: React.FC<SolutionSliderProps> = ({ cards }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: <FaArrowLeft />, // Используйте компоненты стрелок
-    nextArrow: <FaArrowRight />,
+    prevArrow: <PrevArrow onClick={() => {}} />,
+    nextArrow: <NextArrow onClick={() => {}} />,
     responsive: [
       {
         breakpoint: 1024,
@@ -38,27 +49,36 @@ const SolutionSlider: React.FC<SolutionSliderProps> = ({ cards }) => {
         },
       },
     ],
-  };
+  }
 
   return (
-   
-      <Slider {...settings}>
+    <Slider {...settings}>
       {cards.map((card, index) => (
-          <div key={index} className="flex max-w-fit card bg-sky-500 items-start max-lg:align-center h-64 ">
-            <div className="flex flex-col gap-5 bg-basic-50 dark:bg-secondary-3 w-96 px-4 py-6">
-            <div className="semibold text-lg lg:pr-5 text-center lg:text-left">{card.title}</div>   
-                <p>{card.description1}</p>              
-                <p>{card.description2}</p>
+        <div
+          key={index}
+          className="!flex !max-w-fit items-start h-64 mx-3 lg:mx-0"
+        >
+          <div className="flex flex-col gap-5 card border-2 !w-96 px-4 py-6">
+            <div className="text-xl font-semibold lg:pr-16 text-center lg:text-left">
+              {card.title}
             </div>
+            <div className="flex items-start gap-3">
+              <div className="p-1 bg-primary-3 rounded-full flex items-center justify-center">
+                <ArrowIcon />
+              </div>
+              <p className="text-md leading-normal">{card.description1}</p>
             </div>
-     
-        ))}
-      </Slider>
- 
-  );
-};
+            <div className="flex items-start gap-3">
+              <div className="p-1 bg-primary-3 rounded-full flex items-center justify-center">
+                <ArrowIcon />
+              </div>
+              <p className="text-md leading-normal">{card.description2}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </Slider>
+  )
+}
 
-export default SolutionSlider;
-
-
-
+export default SolutionSlider

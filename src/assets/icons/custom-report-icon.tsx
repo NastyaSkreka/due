@@ -49,5 +49,5 @@ export default function CustomReportIcon() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
