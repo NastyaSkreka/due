@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Nav from './components/Nav'
-import Join from './pages/careers/Careers'
+import Join from './pages/Careers/Careers'
 import Home from './pages/home/Home'
 import Footer from './components/Footer'
 import Pricing from './pages/pricing/Pricing'
