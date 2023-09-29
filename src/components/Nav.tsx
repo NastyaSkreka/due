@@ -1,7 +1,7 @@
 import Logo from '@/assets/icons/logo'
 import { Link } from 'react-router-dom'
-import LargeScreenNav from './nav/LargeScreenNav'
-import BurgerMenu from './nav/BurgerMenu'
+import LargeScreenNav from './Nav/LargeScreenNav'
+import BurgerMenu from './Nav/BurgerMenu'
 
 const Nav = () => {
   return (
