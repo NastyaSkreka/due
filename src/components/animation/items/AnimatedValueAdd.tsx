@@ -70,7 +70,7 @@ const AnimatedValueAdd = () => {
             className={`flex flex-col gap-3 p-8 rounded-xl origin-bottom-left w-[520px] min-h-[250px] ${item.bgColor}`}
             initial={{ scale: 0, originX: 0, originY: 1 }}
             whileInView={{ scale: 1, originX: 0, originY: 1 }}
-            transition={{ duration: 0.5, delay: index * 0.5 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <div
               className={`flex flex-col justify-center items-center card  w-12 h-12 rounded-lg border-none ${item.colorIcon}`}

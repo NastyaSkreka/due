@@ -14,6 +14,7 @@ const TableSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   }
 
   return (
@@ -238,7 +239,7 @@ const TableSlider = () => {
   )
 }
 
-;<motion.div
+<motion.div
   className="flex flex-row absolute rounded-lg origin-top border border-primary-3 -top-7 bg-white"
   initial={{ scale: 0 }}
   whileInView={{ scale: 1 }}

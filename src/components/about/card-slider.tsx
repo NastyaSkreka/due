@@ -1,5 +1,7 @@
+import ArrowLeft from '@/assets/icons/arrow-left'
+import ArrowRight from '@/assets/icons/arrow-right'
 import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+
 
 type CardType = {
   imageUrl: string
@@ -81,11 +83,11 @@ const CardSlider: React.FC<CardSliderProps> = ({ cards }) => {
         </div>
       </div>
       <div className="flex gap-10 justify-center mt-3">
-        <button onClick={prevSlide} className="rounded-lg bg-sky-500 p-2">
-          Previous
+        <button onClick={prevSlide} className="rounded-lg bg-sky-500 px-2">
+          <ArrowLeft/>
         </button>
-        <button onClick={nextSlide} className="rounded-lg bg-sky-500 p-2">
-          Next
+        <button onClick={nextSlide} className="rounded-lg bg-sky-500 px-2">
+          <ArrowRight/>
         </button>
       </div>
     </>

@@ -9,17 +9,7 @@ interface SolutionSliderProps {
   cards: CardSlider[]
 }
 
-const PrevArrow: React.FC<{ onClick: () => void }> = ({ onClick }) => (
-  <div className="slick-arrow slick-prev" onClick={onClick}>
-    &lt; Previous
-  </div>
-)
 
-const NextArrow: React.FC<{ onClick: () => void }> = ({ onClick }) => (
-  <div className="slick-arrow slick-next" onClick={onClick}>
-    Next &gt;
-  </div>
-)
 
 const SolutionSlider: React.FC<SolutionSliderProps> = ({ cards }) => {
   const settings = {
@@ -28,11 +18,10 @@ const SolutionSlider: React.FC<SolutionSliderProps> = ({ cards }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: <PrevArrow onClick={() => {}} />,
-    nextArrow: <NextArrow onClick={() => {}} />,
+   
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 850,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -41,7 +30,7 @@ const SolutionSlider: React.FC<SolutionSliderProps> = ({ cards }) => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 530,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -56,7 +45,7 @@ const SolutionSlider: React.FC<SolutionSliderProps> = ({ cards }) => {
       {cards.map((card, index) => (
         <div
           key={index}
-          className="!flex !max-w-fit items-start h-64 mx-3 lg:mx-0"
+          className="!flex !max-w-fit items-start  h-full px-3 mx-3 lg:mx-0"
         >
           <div className="flex flex-col gap-5 card border-2 !w-96 px-4 py-6">
             <div className="text-xl font-semibold lg:pr-16 text-center lg:text-left">
@@ -81,4 +70,4 @@ const SolutionSlider: React.FC<SolutionSliderProps> = ({ cards }) => {
   )
 }
 
-export default SolutionSlider
+export default SolutionSlider;

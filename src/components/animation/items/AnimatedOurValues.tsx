@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Element } from 'react-scroll'
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import Value from '@/assets/icons/value-01'
 import UnlockTime from '@/assets/icons/value-02'
@@ -62,7 +62,7 @@ const AnimatedOurValues = () => {
             className="flex flex-col gap-3 p-8 rounded-xl origin-bottom-left bg-white shadow-md w-[420px] min-h-[200px]"
             initial={{ scale: 0, originX: 0, originY: 1 }}
             whileInView={{ scale: 1, originX: 0, originY: 1 }}
-            transition={{ duration: 0.5, delay: index * 0.5 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <div
               className={`flex flex-col justify-center items-center w-12 h-12 rounded-lg border-none ${item.colorIcon}`}
